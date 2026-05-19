@@ -1,0 +1,39 @@
+2026-05-19 12:52:33.563656+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "script [*]ro ""C:/rootfile/mainsql.sql"""; SQL statement:
+script ro "C:/rootfile/mainsql.sql" [42000-232]
+2026-05-19 12:52:41.943246+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "script [*]ro C:/rootfile/mainsql.sql"; SQL statement:
+script ro C:/rootfile/mainsql.sql [42000-232]
+2026-05-19 12:53:12.778655+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "script to C:[*]\\temp\\mainsql.sql"; SQL statement:
+script to C:\temp\mainsql.sql [42000-232]
+2026-05-19 12:53:18.511481+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "script  C:[*]\\temp\\mainsql.sql"; SQL statement:
+script  C:\temp\mainsql.sql [42000-232]
+2026-05-19 12:53:33.596797+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SCRIPT TO  C:[*]\\temp\\mainsql.sql"; SQL statement:
+SCRIPT TO  C:\temp\mainsql.sql [42000-232]
+2026-05-19 12:53:42.307361+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "C:\\temp\\mainsql.sql" not found; SQL statement:
+SCRIPT TO  "C:\temp\mainsql.sql" [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.dml.ScriptBase.getFileName(ScriptBase.java:87)
+	at org.h2.command.dml.ScriptBase.deleteStore(ScriptBase.java:105)
+	at org.h2.command.dml.ScriptCommand.query(ScriptCommand.java:175)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:222)
+	at org.h2.command.Command.executeQuery(Command.java:196)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:257)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
