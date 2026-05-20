@@ -75,7 +75,8 @@ public class SecurityConfig {
             "http://localhost:3000",
             "http://localhost:5173",
             "http://172.16.88.113:3000",
-            "http://192.168.110.1:3000"
+            "http://192.168.110.1:3000",
+            "https://mosic2-e1hawnyl3-sasibharathans-projects.vercel.app"// this is for temp demo
             // "https://yourdomain.com"  ← uncomment and set when deploying to AWS
         ));
 
